@@ -1,0 +1,28 @@
+
+ul {
+    position  : absolute;
+    top       : 20px;
+    left      : 50%;
+    transform : translateX(-50%);
+    z-index   : 3;
+    display   : flex;
+    list-style: none;
+  }
+  
+ul li {
+    width           : 10px;
+    height          : 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border          : none;
+    border-radius   : 50%;
+    margin-right    : 16px;
+  }
+  
+  ul li:last-child {
+    margin-right: 0;
+  }
+  
+  ul li.active {
+    background-color: #fff;
+    box-shadow      : 0 0 4px #ffffff80;
+  }
